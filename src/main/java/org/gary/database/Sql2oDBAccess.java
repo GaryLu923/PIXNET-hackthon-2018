@@ -16,7 +16,7 @@ public class Sql2oDBAccess {
 //        String databaseURL = "jdbc:mysql://localhost:3306/pixnet";
         String databaseURL = "jdbc:mysql://localhost:3306/mysql";
         String username = "root";
-        String password = "Password1";
+        String password = "root";
         sql2o = new Sql2o(databaseURL, username, password);
         Connection connection = sql2o.beginTransaction();
         Query query = connection.createQuery("SELECT * FROM user");
